@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "core-hrms"
+version = "0.0.1"
+description = "hrms portal"
+authors = ["karan"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "core"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+djando = "^0.2"
+django = "^5.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+black = "^24.8.0"
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+pre-commit = "^3.8.0"
+mypy = "^1.11.2"
+pylint = "^3.2.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
